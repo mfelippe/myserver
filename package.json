@@ -5,7 +5,7 @@
   "repository": "https://github.com/mfelippe/myserver.git",
   "author": "Marcos Felippe <mfelippe.bsb@hotmail.com>",
   "scripts": {
-    "start": " node --experimental-modules --es-module-specifier-resolution=node server.js"
+    "start": " node server.js"
   },
   "license": "MIT",
   "dependencies": {
