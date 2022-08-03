@@ -9,7 +9,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
 //public
-app.use("/portifolio", express.static("public"));
+app.use("/", express.static("public"));
 
 // Load all modules.
 require("./modules")(app);
