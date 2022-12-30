@@ -10,8 +10,7 @@ module.exports = function (app) {
     try {
       const browser = await pupperteer.launch({
         headless: true,
-        defaultViewport: null,
-        args: ["--no-sandbox"],
+        args: ["--no-sandbox", "--disable-setuid-sandbox"],
       });
 
       const page = await browser.newPage();
