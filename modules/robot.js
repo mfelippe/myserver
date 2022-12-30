@@ -11,6 +11,7 @@ module.exports = function (app) {
       const browser = await pupperteer.launch({
         headless: true,
         defaultViewport: null,
+        args: ["--no-sandbox"],
       });
 
       const page = await browser.newPage();
