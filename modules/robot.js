@@ -49,7 +49,7 @@ module.exports = function (app) {
       }
       await browser.close();
 
-      res.status(200).json({ sorteios: numerosSorteados });
+      res.status(200).json({ qtd: qtd, sorteios: numerosSorteados });
     } catch (err) {
       console.log(err);
       res.status(500).json({ message: "ops ocorreu um erro" });
