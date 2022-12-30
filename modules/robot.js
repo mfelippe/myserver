@@ -19,7 +19,7 @@ module.exports = function (app) {
         waitUntil: "networkidle2",
       });
 
-      await page.waitForSelector(".related-box", { timeout: 10000 });
+      await page.waitForSelector(".related-box", { timeout: 60000 });
       var numerosSorteados = [];
 
       const anterior = "ul.clearfix> li>a";
